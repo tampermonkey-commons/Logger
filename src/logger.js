@@ -1,19 +1,20 @@
 class Logger {
     constructor(name) {
+        this.version = "0.1.0"
         this.name = name
     }
 
     getTime() {
         let now = new Date()
 
-        let hour = now.getHours() + ''
-        if (hour.length == 1) hour = '0' + hour
+        let hour = now.getHours() + ""
+        if (hour.length == 1) hour = "0" + hour
 
-        let minute = now.getMinutes() + ''
-        if (minute.length == 1) minute = '0' + minute
+        let minute = now.getMinutes() + ""
+        if (minute.length == 1) minute = "0" + minute
 
-        let second = now.getSeconds() + ''
-        if (second.length == 1) second = '0' + second
+        let second = now.getSeconds() + ""
+        if (second.length == 1) second = "0" + second
 
         return hour + ":" + minute + ":" + second
     }
